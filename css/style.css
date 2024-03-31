@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+/* Footer */
+.footer{
+  background:#000;
+  padding:30px 0px;
+  font-family: 'Play', sans-serif;
+  text-align:center;
+}
+    
+.footer .row{
+width:100%;
+margin:1% 0%;
+padding:0.6% 0%;
+color:gray;
+font-size:0.8em;
+}
+    
+.footer .row a{
+text-decoration:none;
+color:gray;
+transition:0.5s;
+}
+    
+.footer .row a:hover{
+color:#fff;
+cursor: pointer;
+}
+    
+.footer .row ul li{
+display:inline-block;
+margin:0px 30px;
+}
+    
+.footer .row a i{
+font-size:2em;
+margin:0% 1%;
+}
+    
+@media (max-width:720px){
+  .footer{
+  text-align:left;
+  padding:5%;
+  }
+  .footer .row ul li{
+  display:block;
+  margin:10px 0px;
+  text-align:left;
+  }
+  .footer .row a i{
+  margin:0% 3%;
+  }
+}
+
+.con {
+  background: url(../images/fon1.jpg) no-repeat;
+  width: 100%;
+  height: 900px;
+  background-size: auto 100%;
+  background-position: center;
+}
+
+/* Название на главном меню */
+.cnt {
+  letter-spacing: .5em;
+  display: inline-block;
+  position: relative;
+}
+
+@-webkit-keyframes aitf {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+.cnt-text {
+  font: 700 4em/1 "Oswald", sans-serif;
+  letter-spacing: 0;
+  display: block;
+  background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-backface-visibility: hidden;
+}
+
+.con-fon {
+  text-align: center;
+  font-size: clamp(6px, 2vw, 20px);
+  padding: 18% 0 0 0;
+}
+  
+body{
+  margin:0;
+  overflow-x:hidden;
+}
+    
+
+  
+.summary-fonfon::before {
+  color: #00f7ff;
+}
+  
+.summary-fonfon:hover {
+  color: #ff0008;
+  cursor: pointer;
+}
+
+.pm-rsk:hover {
+  cursor: pointer;
+}
+
+/* Конец Регламента */
+
+
+
+/* Начало Контакты */
+.section-bg {
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  padding: 0;
+  background: url(../images/efootball_bg_cl2.webp);
+  margin-top: -25px;
+}
+
+.kontakt-container {
+position: relative;
+box-sizing: border-box;
+flex: 1;
+}
+
+.kontakt-add {
+  padding-top: 85px;
+  font-family: "Roboto Slab";
+}
+
+.kontakt-name-text {
+font-size: 70px;
+text-align: center;
+color: rgb(0, 229, 255);
+}
+
+.kontakt-list {
+  padding: 0px 0px 0 50px;
+}
+
+.kontakt-tg {
+  display: block;
+  width: 40%;
+}
+
+.kontakt-qiwi img {
+  padding-right: 6px;
+  width: 7.7%;
+  height: 50%;
+}
+
+.kontakt-card img {
+  width: 8%;
+  height: 50%;
+}
+
+.reg-fa {
+  padding: 0px 10px 0px 0px;
+  color: #ff6a13;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 35px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.row-tg a {
+  text-decoration: none;
+  color: #ff6a13;
+  display: flex;
+  padding: 10px 0px;
+  align-items: baseline;
+  font-size: 22px;
+}
+
+.row-tg a:hover {
+  color: #ffff00;
+}
+
+.kontakt-donate {
+  display: block;
+  padding-top: 155px;
+}
+
+.kontakt-donate-text {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.kontakt-qiwi {
+  display: flex;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+.kd-1 {
+  color: #ffffff;
+  padding-left: 60px;
+}
+
+.kontakt-card {
+  display: flex;
+  align-items: center;
+  padding: 0px 0px 15px 0;
+}
+
+/* Конец Контакты */
+
+
+/* Меню Бургер */
+.content-area {
+  padding: 60px  0 0 0;
+}
+
+#menu__toggle {
+  opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  left: 0 !important;
+}
+.menu__btn {
+  position: fixed;
+  top: 30px;
+  left: 25px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 10;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #ECEFF1;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+  transition-duration: .25s;
+  z-index: 1;
+}
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+
+.reg-container {
+  background: url(../images/efootball_bg_cl2.webp); 
+  background-size: 100% auto;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.name-reg-vid {
+  text-align: center;
+  font-size: 40px;
+}
+
+.e-content {
+  text-align: justify; 
+  margin: 25px; 
+  font-size: 18px;
+}
+
+/* Турниры */
+.container-turnir {
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  padding: 0;
+  height: 100vh;
+  background: url(../images/efootball_bg_cl2.webp);
+  margin-top: -25px;
+  padding-bottom: 100px;
+}
+
+.main-container_nosidebar {
+  grid-template-areas: "main-content";
+  grid-template-columns: 100%;
+}
+
+.main-container {
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  gap: 4px;
+  grid-template-areas: "main-content main-sidebar";
+  grid-template-columns: 1fr 320px;
+  min-height: 0;
+  padding: 110px 100px 0px 100px;
+  pointer-events: auto;
+  position: relative;
+  z-index: 2;
+  display: block;
+}
+
+*, :after, :before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+.main-content {
+  grid-area: main-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  z-index: 2;
+}
+
+.main-content, .main-header {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  position: relative;
+}
+
+main {
+  display: block;
+}
+
+.main-content>div:last-child, .main-content>section:last-child {
+  margin-bottom: 0;
+}
+
+.main-component:last-child {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  margin-bottom: 0;
+}
+
+.main-content>div, .main-content>section {
+  margin-bottom: 4px;
+}
+
+.main-component {
+  background: #ffffff00;
+  border-radius: 4px;
+  display: block;
+  margin-bottom: 4px;
+  scroll-margin-top: 140px;
+  width: 100%;
+}
+
+.main-component__title_big {
+  font-size: 26px;
+  line-height: 32px;
+}
+
+.main-component__title {
+  color: #ffffff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0 0 20px;
+  position: relative;
+}
+
+.leagues-search__list.is-visible {
+  display: grid;
+}
+
+.leagues-search__list {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: none;
+  font-size: 0;
+  gap: 20px;
+  grid-template-columns: repeat(3,1fr);
+  list-style-type: none;
+  margin: 20px 0 0;
+  padding: 0;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.leagues-search__item {
+  background-color: #f3f3f3;
+  border-radius: 8px;
+  min-height: 78px;
+  position: relative;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+}
+
+.leagues-search__item-logo {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  height: 40px;
+  left: 20px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 40px;
+}
+
+.leagues-search__item-link {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: 400;
+  height: 100%;
+  left: 0;
+  line-height: 24px;
+  padding: 0px 0px 0px 80px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+a, a:active, a:focus, a:hover, a:visited {
+  text-decoration: none;
+}
+
+a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+}
+
+.leagues-search__item {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.leagues-search__item:hover {
+  transform: scale(1.06);
+}
+
+.leagues-search__item-link br {
+  display: none;
+}
+
+.leagues-search__item a {
+  font-family: "Oswald";
+}
